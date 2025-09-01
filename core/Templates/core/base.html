@@ -8,49 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400;700&family=Oswald:wght@200;700&display=swap" rel="stylesheet" />
+  {% block css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  {% endblock %}
+
 
   <title>Document</title>
 
-  <style>
-    .side-image {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 300px;
-      border-radius: 8px;
-      z-index: 1;
-    }
-    .left-image { left: 20px; }
-    .right-image { right: 20px; }
-    
-    main.flex-fill {
-      margin-left: 340px;
-      margin-right: 340px;
-      z-index: 2;
-      position: relative;
-    }
-    
-    .banner-container {
-      height: 25vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f8f9fa;
-      padding: 1rem;
-    }
-    
-    .banner-container .jumbotron {
-      background-color: white;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 700px;
-      width: 100%;
-      z-index: 2;
-      position: relative;
-    }
-  </style>
+
 </head>
 
 <body class="d-flex flex-column min-vh-100">
