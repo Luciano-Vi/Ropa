@@ -4,10 +4,10 @@ def home(request):
     return render(request,"core/home.html")
 
 def QS(request):
-    return render(request,"core/Quienes somos.html")
+    return render(request,"core/quienes_somos.html")
 
 def PF(request):
-    return render(request,"core/Preguntas frecuentes.html")
+    return render(request,"core/preguntas_frecuentes.html")
 
 def GI(request):
-    return render(request,"core/Galleria de imagenes.html")
+    return render(request,"core/galeria_imagenes.html")

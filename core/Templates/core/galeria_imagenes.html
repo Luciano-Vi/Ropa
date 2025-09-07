@@ -1,0 +1,134 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+  <div class="container my-5">
+    <div class="text-center mb-5">
+      <h1>Galería de Imágenes</h1>
+      <p class="lead">Explora nuestra colección de imágenes destacadas.</p>
+    </div>
+
+
+    <div id="carouselMultiItemExample"
+         class="carousel slide carousel-dark text-center"
+         data-bs-ride="carousel">
+      
+
+      <div class="d-flex justify-content-center mb-4">
+        <button class="carousel-control-prev position-relative"
+                type="button"
+                data-bs-target="#carouselMultiItemExample"
+                data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next position-relative"
+                type="button"
+                data-bs-target="#carouselMultiItemExample"
+                data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+
+      <div class="carousel-inner py-4">
+
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp"
+                       class="card-img-top"
+                       alt="Waterfall"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta</h5>
+                    <p class="card-text">
+                      Texto de ejemplo rápido para basarse en el título de la tarjeta.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Botón</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
+                       class="card-img-top"
+                       alt="Sunset"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta</h5>
+                    <p class="card-text">Texto de ejemplo rápido para basarse en el título.</p>
+                    <a href="#!" class="btn btn-primary">Botón</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp"
+                       class="card-img-top"
+                       alt="Sea"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta</h5>
+                    <p class="card-text">Texto de ejemplo rápido para basarse en el título.</p>
+                    <a href="#!" class="btn btn-primary">Botón</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+                       class="card-img-top"
+                       alt="Fissure"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta</h5>
+                    <p class="card-text">Texto de ejemplo rápido para basarse en el título.</p>
+                    <a href="#!" class="btn btn-primary">Botón</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
+                       class="card-img-top"
+                       alt="Storm"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta</h5>
+                    <p class="card-text">Texto de ejemplo rápido para basarse en el título.</p>
+                    <a href="#!" class="btn btn-primary">Botón</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
+                       class="card-img-top"
+                       alt="Balloons"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta</h5>
+                    <p class="card-text">Texto de ejemplo rápido para basarse en el título.</p>
+                    <a href="#!" class="btn btn-primary">Botón</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+{% endblock %}

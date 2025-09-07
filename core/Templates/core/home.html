@@ -1,10 +1,60 @@
 {% extends 'core/base.html' %}
 
 {% block content %}
-  <div class="container my-5">
-    <div class="text-center">
-      <h1>tung tung sahur</h1>
-      <p class="lead">Aquí va el texto centrado que quieres mostrar entre las imágenes y entre la navbar y el footer.</p>
+
+<div class="container-fluid bg-dark text-white py-5">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Bienvenido a Tung Tung Sahur</h1>
+    <p class="lead">Moda única para todos los estilos. Encuentra las últimas tendencias en ropa y accesorios.</p>
+    <a href="{% url 'galeria' %}" class="btn btn-primary btn-lg mt-3">Explorar Colección</a>
+  </div>
+</div>
+
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Categorías Destacadas</h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="card-img-top" alt="Moda Hombre">
+        <div class="card-body">
+          <h5 class="card-title">Hombre</h5>
+          <p class="card-text">Descubre nuestra colección exclusiva de moda masculina.</p>
+          <a href="{% url 'galeria' %}" class="btn btn-outline-dark">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/112.webp" class="card-img-top" alt="Moda Mujer">
+        <div class="card-body">
+          <h5 class="card-title">Mujer</h5>
+          <p class="card-text">Encuentra las últimas tendencias en moda femenina.</p>
+          <a href="{% url 'galeria' %}" class="btn btn-outline-dark">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/113.webp" class="card-img-top" alt="Accesorios">
+        <div class="card-body">
+          <h5 class="card-title">Accesorios</h5>
+          <p class="card-text">Complementa tu look con nuestra selección de accesorios.</p>
+          <a href="{% url 'galeria' %}" class="btn btn-outline-dark">Ver más</a>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
+
+<div class="container-fluid bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-3">¿Listo para renovar tu estilo?</h2>
+    <p class="lead">Explora nuestra galería de imágenes y encuentra tu próximo outfit.</p>
+    <a href="{% url 'galeria' %}" class="btn btn-dark btn-lg">Ir a la Galería</a>
+  </div>
+</div>
 {% endblock %}

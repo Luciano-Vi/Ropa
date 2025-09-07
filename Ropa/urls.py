@@ -19,9 +19,9 @@ from django.urls import path
 from core import views
 
 urlpatterns = [
-    path('',views.home, name='home'),
-    path('quienes somos/',views.QS, name='Quienes somos'),
-    path('preguntas frecuentes/',views.PF, name='Preguntas frecuentes'),
-    path('galleria de imagenes/',views.GI, name='Galleria de imagenes'),
+    path('', views.home, name='home'),
+    path('quienes-somos/', views.QS, name='quienes'),
+    path('preguntas-frecuentes/', views.PF, name='faq'),
+    path('galeria-imagenes/', views.GI, name='galeria'),
     path('admin/', admin.site.urls),
 ]
